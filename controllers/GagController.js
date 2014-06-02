@@ -10,7 +10,7 @@ exports.serve = function (req, res) {
 		json: true
 	}, function(err, response, body) {
 		if(!err) {
-			res.send(body.data);
+			res.send(body);
 		} else {
 			res.send(JSON.stringify(err));
 		}
