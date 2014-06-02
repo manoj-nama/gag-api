@@ -1,7 +1,8 @@
 <div>
 	<div class="gag" data-ng-repeat="gag in gags">
-		<p>{{gag.caption}}</p>
+		<p>{{gag.caption}} <span data-ng-show="gag.from.name">,by {{gag.from.name}}</span></p>
 		<img ng-src="{{gag.images.normal}}" alt="{{gag.caption}}">
+		<p>Total Votes: {{gag.votes.count}}</p> | <a ng-href="{{gag.actions.like}}">Like</a> | <a ng-href="{{gag.actions.unlike}}">Unlike</a>
+	<hr>
 	</div>
-	<br>
 </div>
