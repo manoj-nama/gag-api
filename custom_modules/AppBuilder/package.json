@@ -1,0 +1,5 @@
+{
+	"name": "AppBuilder",
+	"description": "Defines the base framework fro the Application",
+	"main": "./lib/main"
+}

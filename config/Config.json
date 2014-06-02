@@ -1,7 +1,9 @@
 {
 	"common": {
 		"infinigag": {
-			"url": "http://infinigag.eu01.aws.af.cm"
+			"url": "http://infinigag.eu01.aws.af.cm/",
+			"category": "hot",
+			"paging": 0
 		}
 	}
 }

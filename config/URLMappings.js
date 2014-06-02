@@ -1,9 +1,7 @@
-
+var controllers = {
+	GagController: require('../controllers/GagController')
+};
 
 exports.addRoutes = function (app) {
-	
-	app.get("/gag/:category/:page?/:limit?", function (req, res) {
-		res.send("Server working ...");
-	});
-
+	app.get("/gag/:category/:paging?", controllers.GagController.serve);
 }
