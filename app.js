@@ -11,4 +11,6 @@ appRouter.addRoutes(app);
 
 app.use(express.static(__dirname + '/public'));
 
-app.listen(process.env.PORT || 8888);
+app.listen(process.env.PORT || 8888, function () {
+	console.log("Server Listening on port", process.env.PORT || 8888);
+});
