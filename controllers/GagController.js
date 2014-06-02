@@ -10,9 +10,11 @@ exports.serve = function (req, res) {
 		json: true
 	}, function(err, response, body) {
 		if(!err) {
-			res.send(body);
+			body["status"] = 200;
+			res.json(body);
 		} else {
-			res.send(JSON.stringify(err));
+			err["status"] = 404;
+			res.json(err);
 		}
 	});
 };
