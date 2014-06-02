@@ -1,0 +1,22 @@
+{
+  "name": "gag-api",
+  "version": "0.0.0",
+  "description": "Simple 9Gag API consumer App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/manoj-nama/gag-api.git"
+  },
+  "author": "Manoj Nama",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manoj-nama/gag-api/issues"
+  },
+  "homepage": "https://github.com/manoj-nama/gag-api"
+}
