@@ -3,7 +3,7 @@ var app = angular.module("GagApp", ["ngRoute"]);
 function GagController ($scope, $http, $location, $routeParams) {
 	$http.get("/gag/" + $routeParams.category + "/" + $routeParams.pageId).success(function(resp) {
 		console.log(resp);
-		if(resp.status == 200 && resp.data) {
+		if(resp.data) {
 			$scope.gags = resp.data;
 			$scope.nextPageId = resp.paging.next;
 		}

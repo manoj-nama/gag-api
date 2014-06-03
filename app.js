@@ -9,6 +9,7 @@ var config = require("./config/Config.json");
 var app = express();
 app.use(logger('dev'));
 app.use(bodyParser());
+app.use(AppBuilder.apiHelperToolInjectionMiddleware);
 
 GLOBAL._config = config;
 GLOBAL._appBaseDir = __dirname;
