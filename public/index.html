@@ -6,8 +6,16 @@
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300|Gentium+Basic:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="/css/common.css">
 </head>
-<body data-ng-app="GagApp">
+<body data-ng-app="GagApp" data-ng-controller="MasterController">
 	<h1 class="main-logo">GagApp</h1>
+
+	<nav>
+		<ul>
+			<li><a href="javascript:void(0)" data-ng-click="loadGagCategory('hot')">Hot</a></li>
+			<li><a href="javascript:void(0)" data-ng-click="loadGagCategory('trending')">Trending</a></li>
+			<li><a href="javascript:void(0)" data-ng-click="loadGagCategory('fresh')">Fresh</a></li>
+		</ul>
+	</nav>
 
 	<div data-ng-view=""></div>
 
