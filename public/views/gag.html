@@ -1,8 +1,12 @@
 <div>
-	<div class="gag" data-ng-repeat="gag in gags">
-		<p>{{gag.caption}} <span data-ng-show="gag.from.name">,by {{gag.from.name}}</span></p>
-		<img ng-src="{{gag.images.normal}}" alt="{{gag.caption}}">
-		<p>Total Votes: {{gag.votes.count}}</p> | <a ng-href="{{gag.actions.like}}">Like</a> | <a ng-href="{{gag.actions.unlike}}">Unlike</a>
+	<div class="gag">
+		<p>{{currentGag.caption}} <span data-ng-show="currentGag.from.name">,by {{currentGag.from.name}}</span></p>
+		<img ng-src="{{currentGag.images.normal}}" alt="{{currentGag.caption}}">
+		<p>Total Votes: {{currentGag.votes.count}}</p> | <a ng-href="{{currentGag.actions.like}}">Like</a> | <a ng-href="{{currentGag.actions.unlike}}">Unlike</a>
 	<hr>
 	</div>
+
+	<br><br>
+	<input type="button" value="Prev" data-ng-click="showGag('prev');">
+	<input type="button" value="Next" data-ng-click="showGag('next');">
 </div>
